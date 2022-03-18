@@ -25,12 +25,22 @@
 	border-radius: 0.4rem;
 }
 
-.eventDateTime {
+.eventTime {
+	margin-bottom: 0.5rem;
+	text-align: left;
+}
+
+.eventDate {
 	margin-bottom: 0.5rem;
 	text-align: left;
 }
 
 .eventVenue {
+	margin-bottom: 0.5rem;
+	text-align: left;
+}
+
+.eventFee {
 	margin-bottom: 0.5rem;
 	text-align: left;
 }
@@ -50,4 +60,37 @@
 	color: var(--primary);
 	margin-right: 1rem;
 	font-size: larger;
+}
+
+/* Both Tablet and Mobile */
+@media only screen and (max-width: 1023px) {
+	.eventTemplateContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: fit-content;
+	}
+	.eventDetails {
+		width: 100%;
+		justify-content: flex-start;
+		padding: 1rem;
+	}
+	.eventDescription {
+		width: 100%;
+		justify-content: flex-start;
+		padding: 1rem;
+	}
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+	.eventImgContainer {
+		width: 80%;
+		height: fit-content;
+		margin-bottom: 2rem;
+	}
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 }
