@@ -39,34 +39,35 @@
 	z-index: var(--z-tooltip);
 	padding: 0.6rem 0.1rem;
 	width: 100%;
-	bottom: 0.5rem;
+	bottom: 0;
 	transition: 0.4s ease;
-	-webkit-transform: translate(0, 65%);
-	-ms-transform: translate(0, 65%);
-	transform: translate(0, 65%);
+	-webkit-transform: translate(0, 55%);
+	-ms-transform: translate(0, 55%);
+	transform: translate(0, 55%);
 }
 
 .title {
 	font-size: large;
 	font-weight: bold;
-	color: var(--text);
+	color: var(--white);
 	font-family: var(--primaryFont);
 	width: 90%;
 	letter-spacing: 0.1rem;
+	word-wrap: break-word;
 }
 
 .description {
 	font-size: small;
-	color: var(--text);
+	color: var(--white);
 	width: 90%;
 	margin-top: 0.7rem;
 }
 
 @media (hover: hover) {
 	.cardContainer:hover .textContainer {
-		-webkit-transform: translate(0, 10%);
-		-ms-transform: translate(0, 10%);
-		transform: translate(0, 10%);
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
 	}
 
 	.cardContainer:hover .img {
