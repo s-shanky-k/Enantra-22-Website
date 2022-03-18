@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./TextCard.module.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 // Usage:
 // <Card
 //     props={{
@@ -25,6 +26,15 @@ function TextCard({ props }) {
 					<div className={styles.description}>
 						{props.description}
 					</div>
+					{props.contact !== undefined && (
+						<div className={styles.contact}>
+							<FontAwesomeIcon
+								icon={faPhone}
+								className={styles.contactIcon}
+							/>
+							{props.contact}
+						</div>
+					)}
 				</div>
 			</div>
 		</>
