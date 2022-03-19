@@ -1,18 +1,27 @@
 import React from "react";
 import styles from "./SpeakerCard.module.css";
 
-function SpeakerCard() {
+// Usage:
+// <SpeakerCard
+//     props={{
+//         img: "netflixlogo.jpg",
+//         title: "Kishan Das",
+//         description: "Boomer",
+//     }}
+// />
+
+function SpeakerCard({ props }) {
 	return (
 		<div className={styles.container}>
 			<div className={styles.card}>
 				<div className={styles.cardImg}>
 					<img
-						src={`${process.env.PUBLIC_URL}/images/netflixlogo.jpg`}
+						src={`${process.env.PUBLIC_URL}/images/${props.img}`}
 					/>
 				</div>
 				<div className={styles.cardContent}>
-					<h2 className={styles.bigTitle}>Kishan Das</h2>
-					<h3 className={styles.mediumTitle}>Noob</h3>
+					<h2 className={styles.bigTitle}>{props.title}</h2>
+					<h3 className={styles.mediumTitle}>{props.description}</h3>
 				</div>
 			</div>
 		</div>

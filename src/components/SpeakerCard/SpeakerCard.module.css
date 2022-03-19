@@ -56,6 +56,6 @@
 		transform: scale(1.15) translateY(-15%);
 	}
 	.card:hover {
-		box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
 	}
 }
