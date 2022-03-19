@@ -14,19 +14,26 @@ import Navbar from "./components/Navbar/Navbar";
 const StyledApp = styled.div``;
 
 function App() {
-	return (
-		<ThemeProvider theme={darkTheme}>
-			<GlobalStyles />
-			<StyledApp>
-				<div className="App">
-					<Router>
-						<Navbar />
-						<AllRoutes />
-					</Router>
-				</div>
-			</StyledApp>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <GlobalStyles />
+      <StyledApp>
+        <div className="App">
+          <Router>
+            <div className="brandContainer">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/Logos/ausec.png`}
+                alt="AUSEC"
+                className={`ausecBrand`}
+              />
+            </div>
+            <Navbar />
+            <AllRoutes />
+          </Router>
+        </div>
+      </StyledApp>
+    </ThemeProvider>
+  );
 }
 
 const AllRoutes = () => {

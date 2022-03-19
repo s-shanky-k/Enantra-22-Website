@@ -12,3 +12,28 @@
   font-family: "PrimaryBold";
   src: url(assets/fonts/Roboto/Roboto-Black.ttf);
 }
+
+@font-face {
+  font-family: "DINRegular";
+  src: url(assets/fonts/DIN/DIN.ttf);
+}
+
+@font-face {
+  font-family: "DINMedium";
+  src: url(assets/fonts/DIN/DIN\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "DINBold";
+  src: url(assets/fonts/DIN/DIN.ttf);
+}
+
+@font-face {
+  font-family: "StylishRegular";
+  src: url(assets/fonts/Stylish/NeueMetana-Regular.otf);
+}
+
+@font-face {
+  font-family: "StylishBold";
+  src: url(assets/fonts/Stylish/NeueMetana-Bold.otf);
+}
