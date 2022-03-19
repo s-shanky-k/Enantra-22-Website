@@ -5,6 +5,7 @@ export const lightTheme = {
 	bg: "#f1f1f6",
 	text: "#000000",
 	backgroundText: "#DADCE0",
+	accent: "#1C1D23",
 };
 
 // Dark Theme Config
@@ -12,6 +13,7 @@ export const darkTheme = {
 	bg: "#2c2c31",
 	text: "#e1e2e2",
 	backgroundText: "#474b4f",
+	accent: "#F1F1F1",
 };
 
 // Replace primary and secondary colors
@@ -22,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
       --primary: #f63b1a;
       --secondary:#34374a;
       --tertiary:#ff2079;
-      --accent: #e92efb;
+      --accent: ${(props) => props.theme.accent};
       --text : ${(props) => props.theme.text};
       --backgroundText : ${(props) => props.theme.backgroundText};
       --bg : ${(props) => props.theme.bg};
