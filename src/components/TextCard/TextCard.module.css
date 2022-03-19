@@ -46,6 +46,14 @@
 .contact {
   margin-top: 1rem;
 }
+
+.contact p {
+  margin-bottom: var(--mb-2);
+}
+
+.contact p:last-child {
+  margin-bottom: 0;
+}
 .contactIcon {
   margin: 0 0.5rem;
   color: var(--primary);

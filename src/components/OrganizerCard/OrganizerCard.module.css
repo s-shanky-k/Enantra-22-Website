@@ -1,0 +1,34 @@
+.cardWrapper {
+  width: 18rem;
+  height: fit-content;
+  /* max-height: 18rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 4rem; */
+}
+
+.imageBox {
+  background-color: grey;
+  padding: var(--mb-2);
+  display: flex;
+  justify-content: center;
+}
+
+.imageBox > img {
+  border-radius: 50%;
+}
+
+.textBox {
+  border: 3px solid var(--primary);
+  width: 100%;
+  text-align: center;
+  border-top: 0px;
+  padding: var(--mb-2) 0;
+}
+
+.primaryDetail {
+  font-size: 1.2rem;
+  margin-bottom: var(--mb-1);
+}

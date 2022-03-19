@@ -18,10 +18,7 @@ function Card({ props }) {
       <div className={styles.cardContainer}>
         <Link to={props.url}>
           <div className={styles.imgContainer}>
-            <img
-              className={styles.img}
-              src={`${process.env.PUBLIC_URL}/images/${props.img}`}
-            ></img>
+            <img className={styles.img} src={`${props.img}`}></img>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.title}>{props.title}</div>

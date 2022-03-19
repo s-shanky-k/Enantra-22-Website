@@ -26,8 +26,17 @@ function TextCard({ props }) {
           <div className={styles.description}>{props.description}</div>
           {props.contact !== undefined && (
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faPhone} className={styles.contactIcon} />
-              {props.contact[0].name} - {props.contact[0].mobile}
+              {props.contact.map((item, index) => {
+                return (
+                  <p key={index}>
+                    <FontAwesomeIcon
+                      icon={faPhone}
+                      className={styles.contactIcon}
+                    />
+                    {item.name} - {item.mobile}
+                  </p>
+                );
+              })}
             </div>
           )}
         </div>
