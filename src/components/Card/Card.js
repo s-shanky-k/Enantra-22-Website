@@ -13,26 +13,24 @@ import styles from "./Card.module.css";
 // />
 
 function Card({ props }) {
-	return (
-		<>
-			<div className={styles.cardContainer}>
-				<Link to={props.href}>
-					<div className={styles.imgContainer}>
-						<img
-							className={styles.img}
-							src={`${process.env.PUBLIC_URL}/images/${props.img}`}
-						></img>
-					</div>
-					<div className={styles.textContainer}>
-						<div className={styles.title}>{props.title}</div>
-						<div className={styles.description}>
-							{props.description}
-						</div>
-					</div>
-				</Link>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className={styles.cardContainer}>
+        <Link to={props.url}>
+          <div className={styles.imgContainer}>
+            <img
+              className={styles.img}
+              src={`${process.env.PUBLIC_URL}/images/${props.img}`}
+            ></img>
+          </div>
+          <div className={styles.textContainer}>
+            <div className={styles.title}>{props.title}</div>
+            <div className={styles.description}>{props.oneLiner}</div>
+          </div>
+        </Link>
+      </div>
+    </>
+  );
 }
 
 export default Card;

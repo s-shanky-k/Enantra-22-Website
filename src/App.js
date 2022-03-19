@@ -11,6 +11,10 @@ import {
 import Landing from "./pages/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
 import SixDTTalks from "./pages/SixDTTalks/SixDTTalks";
+import Workshops from "./pages/Workshops/Workshops";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import WorkshopsMiddleware from "./pages/Workshops/WorkshopsMiddleware";
+import Footer from "./components/Footer/Footer";
 
 const StyledApp = styled.div``;
 
@@ -30,6 +34,7 @@ function App() {
             </div>
             <Navbar />
             <AllRoutes />
+            <Footer />
           </Router>
         </div>
       </StyledApp>
@@ -42,6 +47,9 @@ const AllRoutes = () => {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/6dt" element={<SixDTTalks />} />
+      <Route path="/workshops" element={<Workshops />} />
+      <Route path="/workshops/:title" element={<WorkshopsMiddleware />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 };
