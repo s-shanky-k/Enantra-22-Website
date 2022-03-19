@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 
 // Usage:
@@ -7,6 +8,7 @@ import styles from "./Card.module.css";
 //         img: "netflixlogo.jpg",
 //         title: "Title",
 //         description: "This is the description about the event",
+//			href:"/events"
 //     }}
 // />
 
@@ -14,18 +16,20 @@ function Card({ props }) {
 	return (
 		<>
 			<div className={styles.cardContainer}>
-				<div className={styles.imgContainer}>
-					<img
-						className={styles.img}
-						src={`${process.env.PUBLIC_URL}/images/${props.img}`}
-					></img>
-				</div>
-				<div className={styles.textContainer}>
-					<div className={styles.title}>{props.title}</div>
-					<div className={styles.description}>
-						{props.description}
+				<Link to={props.href}>
+					<div className={styles.imgContainer}>
+						<img
+							className={styles.img}
+							src={`${process.env.PUBLIC_URL}/images/${props.img}`}
+						></img>
 					</div>
-				</div>
+					<div className={styles.textContainer}>
+						<div className={styles.title}>{props.title}</div>
+						<div className={styles.description}>
+							{props.description}
+						</div>
+					</div>
+				</Link>
 			</div>
 		</>
 	);
