@@ -1,0 +1,137 @@
+.nav_wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s all !important;
+  z-index: var(--z-fixed) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_wrapper > * {
+  /* opacity: 0.5 !important; */
+}
+
+.hamburger {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: var(--z-fixed) !important;
+  transition: 0.2s all !important;
+  font-size: 2.5rem !important;
+}
+
+.hamburger:hover {
+  transform: scale(1.2);
+}
+
+.close_icon {
+  font-size: 2.5rem !important;
+  transition: 0.2s all !important;
+  cursor: pointer;
+  /* position: fixed; */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  padding: var(--mb-1);
+}
+
+.close_icon:hover {
+  transform: scale(1.2);
+  background-color: var(--bgBlue);
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.brandImageContainer > img {
+  width: 100px;
+  margin-bottom: var(--mb-2);
+}
+
+.navLink {
+  position: relative;
+  margin: var(--mb-2) var(--mb-1);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.3s all;
+  font-family: var(--primaryFontBold);
+  text-decoration: none;
+  color: var(--text);
+  letter-spacing: 0.1rem;
+}
+
+.activeClass,
+.navLink:hover {
+  color: var(--primary);
+}
+
+.activeClass::after,
+.navLink::after {
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  background: var(--primary);
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0%;
+}
+
+.activeClass::after,
+.navLink:hover::after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Media Queries */
+
+/* Above Tablet */
+@media only screen and (min-width: 1024px) {
+  .nav_open {
+    width: 50vw;
+    right: 0vw;
+  }
+
+  .nav_close {
+    width: 0vw;
+    right: -50vw;
+  }
+}
+
+/* Both Tablet and Mobile */
+@media only screen and (max-width: 1023px) {
+  .nav_open {
+    width: 100vw;
+    right: 0vw;
+  }
+
+  .nav_close {
+    width: 0vw;
+    right: -50vw;
+  }
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+}
