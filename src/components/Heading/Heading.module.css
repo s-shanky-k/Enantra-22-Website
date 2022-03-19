@@ -1,0 +1,52 @@
+.heading {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "StylishBold";
+}
+
+.heading {
+  letter-spacing: 3px;
+  padding-bottom: 13px;
+  position: relative;
+  width: max-content;
+}
+.heading:before {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 5px;
+}
+.heading:after {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 0.25em;
+}
+
+/* Media Queries */
+
+/* Above Tablet */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Both Tablet and Mobile */
+@media only screen and (max-width: 1023px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+}

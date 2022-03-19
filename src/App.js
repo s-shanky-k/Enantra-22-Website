@@ -20,6 +20,13 @@ function App() {
       <StyledApp>
         <div className="App">
           <Router>
+            <div className="brandContainer">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/Logos/ausec.png`}
+                alt="AUSEC"
+                className={`ausecBrand`}
+              />
+            </div>
             <Navbar />
             <AllRoutes />
           </Router>

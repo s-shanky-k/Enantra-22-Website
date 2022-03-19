@@ -2,6 +2,7 @@ import React from "react";
 import { ABOUT_US } from "../../data/AboutUs";
 import styles from "./Landing.module.css";
 import PageLander from "./PageLander/PageLander";
+import Heading from "../../components/Heading/Heading";
 
 function Landing() {
   return (
@@ -20,7 +21,7 @@ function Landing() {
                 </div>
 
                 <div className={`${styles.text_box}`}>
-                  <h1>{info.title}</h1>
+                  <Heading text={info.title} />
                   <p>{info.content}</p>
                 </div>
               </div>
