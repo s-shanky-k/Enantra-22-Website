@@ -88,34 +88,29 @@ function WorkshopTemplate({ props }) {
             }}
           />
           <div className={styles.buttonContainer}>
-            <Button text={"Register"} />
+            <Button props={{ text: "Register" }} />
           </div>
         </div>
       </div>
-      <div className={styles.speakersContainer}>
-        <div className={styles.headingContainer}>
-          <Heading text={"Organizers"} />
+      {props.hasOwnProperty("speakers") && (
+        <div className={styles.speakersContainer}>
+          <div className={styles.headingContainer}>
+            <Heading text={"Organizers"} />
+          </div>
+          <div className={styles.organizersCardsContainer}>
+            {props.speakers.map((speaker, index) => {
+              return (
+                <OrganizerCard
+                  key={index}
+                  image={speaker.image}
+                  name={speaker.name}
+                  company={speaker.company}
+                />
+              );
+            })}
+          </div>
         </div>
-        <div className={styles.organizersCardsContainer}>
-          {props.speakers.map((speaker, index) => {
-            return (
-              <OrganizerCard
-                key={index}
-                image={speaker.image}
-                name={speaker.name}
-                company={speaker.company}
-              />
-            );
-          })}
-        </div>
-        {/* <ImageCard
-          props={{
-            title: props.title,
-            description: props.description,
-            img: props.img,
-          }}
-        /> */}
-      </div>
+      )}
     </div>
   );
 }

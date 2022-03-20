@@ -32,12 +32,12 @@ export const WORKSHOPS = [
   {
     title: "Art of Film Making and Story Telling ",
     url: "film-making",
-    img: imageBasePath + "film-making/netflixlogo.jpg",
+    img: imageBasePath + "film-making/logo.png",
     speakers: [
       {
         name: "Mr. SV Roshan",
         company: "MGR Film and TV Institute",
-        image: imageBasePath + "film-making/netflixlogo.jpg",
+        image: imageBasePath + "film-making/logo.png",
       },
     ],
     time: "9am - 5pm ",
@@ -59,11 +59,11 @@ export const WORKSHOPS = [
   {
     title: "Stock Market and Investing",
     url: "stock-market",
-    img: imageBasePath + "stock-market/netflixlogo.jpg",
+    img: imageBasePath + "stock-market/logo.png",
     speakers: [
       {
         name: "Mr. Ravi Padmanabhan",
-        image: imageBasePath + "film-making/netflixlogo.jpg",
+        image: imageBasePath + "stock-market/netflixlogo.jpg",
       },
     ],
     time: "10am onwards",
@@ -85,11 +85,11 @@ export const WORKSHOPS = [
   {
     title: "The Metaverse",
     url: "metaverse",
-    img: imageBasePath + "film-making/netflixlogo.jpg",
+    img: imageBasePath + "metaverse/logo.png",
     speakers: [
       {
         name: "XR Labs",
-        image: imageBasePath + "film-making/netflixlogo.jpg",
+        image: imageBasePath + "metaverse/netflixlogo.jpg",
       },
     ],
     time: "9am - 5pm",
