@@ -42,7 +42,7 @@
   margin-bottom: var(--mb-3);
 }
 
-.workshopsContainer {
+.eventsContainer {
   width: 100%;
   /* height: fit-content; */
   display: flex;
@@ -51,7 +51,7 @@
   align-items: center;
 }
 
-.workshopsContainer > * {
+.eventsContainer > * {
   margin: 3rem 2rem;
 }
 

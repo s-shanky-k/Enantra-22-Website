@@ -6,6 +6,7 @@ export const MINI_EVENTS = [
     title: "Arena Hut",
     url: "arena-hut",
     img: imageBasePath + "arena-hut/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "9am-10am",
@@ -25,6 +26,7 @@ export const MINI_EVENTS = [
     title: "Save the Company!",
     url: "save-the-company",
     img: imageBasePath + "save-the-company/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "10am-11am",
@@ -44,6 +46,7 @@ export const MINI_EVENTS = [
     title: "Brand Race",
     url: "brand-race",
     img: imageBasePath + "brand-race/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "11am-12pm",
@@ -63,6 +66,7 @@ export const MINI_EVENTS = [
     title: "Shark Tank",
     url: "shark-tank",
     img: imageBasePath + "shark-tank/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "12pm-1pm",
@@ -82,6 +86,7 @@ export const MINI_EVENTS = [
     title: "Enviropreneur",
     url: "enviropreneur",
     img: imageBasePath + "enviropreneur/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "1pm-2pm",
@@ -101,6 +106,7 @@ export const MINI_EVENTS = [
     title: "Entrevert",
     url: "entrevert",
     img: imageBasePath + "entrevert/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "2pm-3pm",
@@ -120,6 +126,7 @@ export const MINI_EVENTS = [
     title: "Poster Mania",
     url: "poster-mania",
     img: imageBasePath + "poster-mania/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "TBD",
@@ -139,6 +146,7 @@ export const MINI_EVENTS = [
     title: "Creative Photography",
     url: "creative-photography",
     img: imageBasePath + "creative-photography/logo.png",
+    oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",
     time: "TBD",

@@ -14,7 +14,7 @@ function MiniEvents() {
           <Heading text={"Mini Events"} />
         </div>
 
-        <div className={styles.workshopsContainer}>
+        <div className={styles.eventsContainer}>
           {MINI_EVENTS.map((event, index) => (
             <Card key={index + 1} props={event} />
           ))}

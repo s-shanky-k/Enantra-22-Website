@@ -17,6 +17,8 @@ import WorkshopsMiddleware from "./pages/Workshops/WorkshopsMiddleware";
 import Footer from "./components/Footer/Footer";
 import MiniEvents from "./pages/MiniEvents/MiniEvents";
 import MiniEventsMiddleware from "./pages/MiniEvents/MiniEventsMiddleware";
+import MegaEvents from "./pages/MegaEvents/MegaEvents";
+import MegaEventsMiddleware from "./pages/MegaEvents/MegaEventsMiddleware";
 
 const StyledApp = styled.div``;
 
@@ -49,10 +51,16 @@ const AllRoutes = () => {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/6dt" element={<SixDTTalks />} />
+
       <Route path="/workshops" element={<Workshops />} />
       <Route path="/workshops/:title" element={<WorkshopsMiddleware />} />
+
       <Route path="/mini-events" element={<MiniEvents />} />
       <Route path="/mini-events/:title" element={<MiniEventsMiddleware />} />
+
+      <Route path="/mega-events" element={<MegaEvents />} />
+      <Route path="/mega-events/:title" element={<MegaEventsMiddleware />} />
+
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
