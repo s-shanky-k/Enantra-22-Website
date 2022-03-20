@@ -1,9 +1,6 @@
 import React from "react";
-import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
 import Heading from "../../components/Heading/Heading";
-import SpeakerCard from "../../components/SpeakerCard/SpeakerCard";
-import { SixDTTalksData } from "../../data/SixDTTalks";
 import { WORKSHOPS } from "../../data/Workshops";
 import styles from "./Workshops.module.css";
 

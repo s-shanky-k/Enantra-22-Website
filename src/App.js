@@ -2,11 +2,12 @@ import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles } from "./themes";
 import {
-	BrowserRouter as Router,
-	Navigate,
-	Route,
-	Routes,
-	useLocation,
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
 } from "react-router-dom";
 import Landing from "./pages/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
@@ -29,86 +30,84 @@ export const Theme = createContext();
 const StyledApp = styled.div``;
 
 function App() {
-	const [theme, settheme] = useState();
+  const [theme, settheme] = useState();
 
-	useEffect(() => {
-		if (Cookies.get("theme") === undefined) {
-			Cookies.set("theme", "light");
-		}
-		settheme(Cookies.get("theme"));
+  useEffect(() => {
+    if (Cookies.get("theme") === undefined) {
+      Cookies.set("theme", "light");
+    }
+    settheme(Cookies.get("theme"));
 
-		return () => {};
-	}, []);
+    return () => {};
+  }, []);
 
-	const toggleTheme = () => {
-		let temp = theme === "light" ? "dark" : "light";
-		Cookies.set("theme", temp);
-		settheme(temp);
-	};
+  const toggleTheme = () => {
+    let temp = theme === "light" ? "dark" : "light";
+    Cookies.set("theme", temp);
+    settheme(temp);
+  };
 
-	return (
-		<ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-			<GlobalStyles />
-			<StyledApp>
-				<ThemeTogglerFunc.Provider value={toggleTheme}>
-					<Theme.Provider value={theme}>
-						<div className="App">
-							<Router>
-								<div className="brandContainer">
-									{theme === "dark" && (
-										<img
-											src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra_white.png`}
-											alt="ENANTRA LOGO"
-											className={`enantraBrand`}
-										/>
-									)}
-									{theme === "light" && (
-										<img
-											src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra_color.png`}
-											alt="ENANTRA LOGO"
-											className={`enantraBrand`}
-										/>
-									)}
-								</div>
-								<Navbar />
-								<AllRoutes />
-								<div className={"themeToggler"}>
-									<ThemeToggler />
-								</div>
-								<Footer />
-							</Router>
-						</div>
-					</Theme.Provider>
-				</ThemeTogglerFunc.Provider>
-			</StyledApp>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <StyledApp>
+        <ThemeTogglerFunc.Provider value={toggleTheme}>
+          <Theme.Provider value={theme}>
+            <div className="App">
+              <Router>
+                <Navbar />
+                <AllRoutes theme={theme} />
+                <div className={"themeToggler"}>
+                  <ThemeToggler />
+                </div>
+                <Footer />
+              </Router>
+            </div>
+          </Theme.Provider>
+        </ThemeTogglerFunc.Provider>
+      </StyledApp>
+    </ThemeProvider>
+  );
 }
 
-const AllRoutes = () => {
-	return (
-		<Routes>
-			<Route path="/" element={<Landing />} />
-			<Route path="/6dt" element={<SixDTTalks />} />
+const AllRoutes = ({ theme }) => {
+  let navigate = useNavigate();
 
-			<Route path="/workshops" element={<Workshops />} />
-			<Route path="/workshops/:title" element={<WorkshopsMiddleware />} />
+  return (
+    <>
+      <div className="brandContainer" onClick={() => navigate("/")}>
+        {theme === "dark" && (
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra_white.png`}
+            alt="ENANTRA LOGO"
+            className={`enantraBrand`}
+          />
+        )}
+        {theme === "light" && (
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra_color.png`}
+            alt="ENANTRA LOGO"
+            className={`enantraBrand`}
+          />
+        )}
+      </div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/6dt" element={<SixDTTalks />} />
 
-			<Route path="/mini-events" element={<MiniEvents />} />
-			<Route
-				path="/mini-events/:title"
-				element={<MiniEventsMiddleware />}
-			/>
+        <Route path="/workshops" element={<Workshops />} />
+        <Route path="/workshops/:title" element={<WorkshopsMiddleware />} />
 
-			<Route path="/mega-events" element={<MegaEvents />} />
-			<Route
-				path="/mega-events/:title"
-				element={<MegaEventsMiddleware />}
-			/>
+        <Route path="/mini-events" element={<MiniEvents />} />
+        <Route path="/mini-events/:title" element={<MiniEventsMiddleware />} />
 
-			<Route path="*" element={<PageNotFound />} />
-		</Routes>
-	);
+        <Route path="/mega-events" element={<MegaEvents />} />
+        <Route path="/mega-events/:title" element={<MegaEventsMiddleware />} />
+
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </>
+  );
 };
 
 export default App;

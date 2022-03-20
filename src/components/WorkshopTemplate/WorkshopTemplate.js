@@ -12,6 +12,7 @@ import {
 import ImageCard from "../ImageCard/ImageCard";
 import Heading from "../Heading/Heading";
 import OrganizerCard from "../OrganizerCard/OrganizerCard";
+import { REGISTRATION_LINK } from "../../data/Registration";
 
 // Usage:
 {
@@ -88,7 +89,12 @@ function WorkshopTemplate({ props }) {
             }}
           />
           <div className={styles.buttonContainer}>
-            <Button props={{ text: "Register" }} />
+            <Button
+              props={{
+                text: "Register",
+                onClickMethod: () => window.open(REGISTRATION_LINK),
+              }}
+            />
           </div>
         </div>
       </div>
