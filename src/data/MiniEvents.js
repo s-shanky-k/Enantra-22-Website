@@ -1,11 +1,11 @@
 const imageBasePath = `${process.env.PUBLIC_URL}/assets/images/MiniEvents/`;
 
 export const MINI_EVENTS = [
-  // Arena Hut
+  // Arena Hunt
   {
-    title: "Arena Hut",
-    url: "arena-hut",
-    img: imageBasePath + "arena-hut/logo.png",
+    title: "Arena Hunt",
+    url: "arena-hunt",
+    img: imageBasePath + "arena-hunt/logo.png",
     oneLiner: "Some one liner about this event will be cool",
     description:
       "Learn how to become an entrepreneur in Automotive service. Obtain in depth experience with the latest control systems and electronic components in cars. Explore the future of Autonomous cars, electric vehicles, hybrid vehicles and hydrogen cell cars and its practical applications with hands on training session.",

@@ -8,12 +8,13 @@
 .mainContainer {
   width: 90%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .brandContainer {
-  margin: var(--mb-3);
+  margin: var(--mb-1);
 }
 
 .brandContainer > img {

@@ -32,7 +32,7 @@ export const MEGA_EVENTS = [
     img: imageBasePath + "auction-house/logo.png",
     oneLiner: "Some one liner about this event will be cool",
     description:
-      "Are you a fellow auction maniac??? Do you also want to put your auctioning skills to the test ? Well,the chance to participate in this incredible event is up for bidding. Going once, going twice…",
+      "Are you a fellow auction maniac??? Do you also want to put your bidding skills to the test ? Well,the chance to participate in this incredible event is up for bidding. Going once, going twice…",
     time: "TBD",
     date: "31/3/2022",
     venue: "X Hall",

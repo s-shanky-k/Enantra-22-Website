@@ -55,11 +55,20 @@ function App() {
             <div className="App">
               <Router>
                 <div className="brandContainer">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra.png`}
-                    alt="AUSEC"
-                    className={`ausecBrand`}
-                  />
+                  {theme === "dark" && (
+                    <img
+                      src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra_white.png`}
+                      alt="ENANTRA LOGO"
+                      className={`enantraBrand`}
+                    />
+                  )}
+                  {theme === "light" && (
+                    <img
+                      src={`${process.env.PUBLIC_URL}/assets/images/Logos/enantra_color.png`}
+                      alt="ENANTRA LOGO"
+                      className={`enantraBrand`}
+                    />
+                  )}
                 </div>
                 <Navbar />
                 <AllRoutes />
