@@ -8,3 +8,9 @@
 .ausecBrand {
   width: 100px;
 }
+
+.themeToggler {
+  position: fixed;
+  bottom: 50px;
+  left: 0px;
+}

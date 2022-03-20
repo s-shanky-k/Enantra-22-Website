@@ -18,8 +18,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-image: url(../../assets/images/bg/lander_4.jpg);
-  filter: blur(2px);
+  /* background-image: url(../../assets/images/bg/lander_4.jpg); */
+  /* filter: blur(4px); */
   background-size: cover;
   z-index: -1;
 }

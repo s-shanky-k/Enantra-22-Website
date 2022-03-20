@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: var(--primary);
+  padding: var(--mb-1);
+  border: 3px solid white;
+  border-left: 0px;
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+}
+
+.icon {
+  transition: 0.2s all;
+}
+
+.wrapper:hover .icon {
+  transform: scale(1.1);
+}

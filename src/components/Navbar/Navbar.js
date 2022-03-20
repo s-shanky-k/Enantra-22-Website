@@ -17,8 +17,8 @@ function Navbar() {
       url: "mega-events",
     },
     {
-      name: "Events",
-      url: "events",
+      name: "Mini Events",
+      url: "mini-events",
     },
     {
       name: "Workshops",
