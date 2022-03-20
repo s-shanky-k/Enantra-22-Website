@@ -99,7 +99,7 @@ export const WORKSHOPS = [
 		date: "TBD",
 		venue: "ECE Department",
 		oneLiner:
-			"Learn about the metaverse from scratch through group discussions and fun interactive sessions.",
+			"Learn about the metaverse from scratch through group discussions.",
 		description:
 			"Corona has made a huge impact on work environment. The whole office, college and school have shrunk into a laptop and phone. Now it’s time for a revolution to bring a new world into one’s home. Want to know more about Facebook’s new name ‘META’?! Want to be the creator of the Meta universe?! Here is the right opportunity for you to learn metaverse from scratch through group discussions and fun interactive sessions. XR Labs is digital experiences company that has done significant work in Augmented Reality, Virtual reality and mixed reality and also 100+ successful projects.",
 		regFee: "Rs. 599",
