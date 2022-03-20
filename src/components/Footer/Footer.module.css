@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   padding: var(--mb-4) 0;
+  background-color: var(--footerBg);
+  color: var(--text);
 }
 
 .mainContainer {

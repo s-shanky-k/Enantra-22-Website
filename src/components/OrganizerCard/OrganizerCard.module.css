@@ -24,7 +24,7 @@
   border: 3px solid var(--primary);
   width: 100%;
   text-align: center;
-  border-top: 0px;
+  /* border-top: 0px; */
   padding: var(--mb-2) 0;
 }
 

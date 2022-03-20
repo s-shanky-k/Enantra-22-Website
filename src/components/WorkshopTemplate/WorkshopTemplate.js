@@ -102,7 +102,7 @@ function WorkshopTemplate({ props }) {
               return (
                 <OrganizerCard
                   key={index}
-                  image={speaker.image}
+                  image={speaker.hasOwnProperty("image") ? speaker.image : null}
                   name={speaker.name}
                   company={speaker.company}
                 />
