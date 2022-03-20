@@ -5,12 +5,12 @@ export const WORKSHOPS = [
 	{
 		title: "Emerging Trends in Automotive Industry and Autonomous Cars",
 		url: "automotive-trends",
-		img: imageBasePath + "automotive-trends/netflixlogo.jpg",
+		img: imageBasePath + "automotive-trends/logo.png",
 		speakers: [
 			{
 				name: "Mr.Boopathy Srinivasan",
 				company: "NIFT, Chennai",
-				image: imageBasePath + "automotive-trends/netflixlogo.jpg",
+				image: imageBasePath + "automotive-trends/logo.png",
 			},
 		],
 		time: "10am onwards",
@@ -65,7 +65,7 @@ export const WORKSHOPS = [
 		speakers: [
 			{
 				name: "Mr. Ravi Padmanabhan",
-				image: imageBasePath + "stock-market/netflixlogo.jpg",
+				image: imageBasePath + "stock-market/logo.png",
 			},
 		],
 		time: "10am onwards",
@@ -92,7 +92,7 @@ export const WORKSHOPS = [
 		speakers: [
 			{
 				name: "XR Labs",
-				image: imageBasePath + "metaverse/netflixlogo.jpg",
+				image: imageBasePath + "metaverse/logo.png",
 			},
 		],
 		time: "9am - 5pm",

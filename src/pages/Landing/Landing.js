@@ -9,7 +9,7 @@ function Landing() {
     <div className={`${styles.wrapper}`}>
       <div className={`${styles.pageLanderWrapper}`}>
         <div className={`${styles.bgDiv}`}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <rect fill="#31363E" width="540" height="450" />
             <defs>
               <linearGradient
