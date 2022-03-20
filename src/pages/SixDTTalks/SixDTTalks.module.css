@@ -31,11 +31,12 @@
 	border-radius: 0.5rem;
 	/* background: rgb(28, 29, 35); */
 	/* background-image: var(--bgVectorGradient); */
-	background: linear-gradient(
+	/* background: linear-gradient(
 		90deg,
 		rgba(28, 29, 35, 1) 0%,
 		rgba(49, 54, 62, 1) 50%
-	);
+	); */
+	background: var(--bgGradient);
 	z-index: 2;
 }
 

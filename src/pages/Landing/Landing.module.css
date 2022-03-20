@@ -20,6 +20,7 @@
 	left: 0px;
 	/* background-image: url(../../assets/images/bg/lander_4.jpg); */
 	/* filter: blur(4px); */
+	background-image: var(--bgVectorGradient);
 	background-size: cover;
 	z-index: -1;
 }

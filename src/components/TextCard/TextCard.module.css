@@ -15,7 +15,7 @@
 	align-items: center;
 	justify-content: center;
 	height: fit-content;
-	background-color: #0e0e0e;
+	background: var(--bgGradient);
 	border: solid var(--primary);
 	border-width: 0.3rem;
 	border-radius: 2rem 0.5rem;
@@ -28,7 +28,7 @@
 .title {
 	font-size: x-large;
 	font-weight: bold;
-	color: var(--white);
+	color: var(--text);
 	font-family: var(--primaryFont);
 	width: 90%;
 	letter-spacing: 0.1rem;
@@ -37,7 +37,7 @@
 
 .description {
 	font-size: medium;
-	color: var(--white);
+	color: var(--text);
 	width: 90%;
 	text-align: justify;
 	margin-top: 1rem;
@@ -45,7 +45,7 @@
 
 .contact {
 	margin-top: 1rem;
-	color: var(--white);
+	color: var(--text);
 }
 
 .contact p {
