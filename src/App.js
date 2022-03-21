@@ -24,6 +24,7 @@ import ThemeToggler from "./components/ThemeToggler/ThemeToggler";
 import { createContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import SimpleLoader from "./components/SimpleLoader/SimpleLoader";
+import ScrollToTop from "./utils/ScrollToTop";
 
 export const ThemeTogglerFunc = createContext();
 export const Theme = createContext();
@@ -38,7 +39,7 @@ function App() {
 
   useEffect(() => {
     if (Cookies.get("theme") === undefined) {
-      Cookies.set("theme", "light");
+      Cookies.set("theme", "dark");
     }
     settheme(Cookies.get("theme"));
 
@@ -59,6 +60,7 @@ function App() {
           <Theme.Provider value={theme}>
             <div className="App">
               <Router>
+                <ScrollToTop />
                 <Navbar />
                 <AllRoutes theme={theme} />
                 <div className={"themeToggler"}>
