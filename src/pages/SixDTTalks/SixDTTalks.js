@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "./SixDTTalks.module.css";
 import SpeakerCard from "../../components/SpeakerCard/SpeakerCard";
 import Button from "../../components/Button/Button";
@@ -12,12 +12,30 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { REGISTRATION_LINK } from "../../data/Registration";
+import SimpleLoader from "../../components/SimpleLoader/SimpleLoader";
 
 function SixDTTalks() {
+  let imageCounter = useRef(0);
+  const [loader, setloader] = useState(true);
+
+  const onImageLoad = () => {
+    imageCounter.current += 1;
+
+    // If all images are loaded, set loader to false
+    if (imageCounter.current >= SixDTTalksData.length) {
+      setloader(false);
+      imageCounter.current = 0;
+    }
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.bgDiv}></div>
-      <div className={styles.innerWrapper}>
+      {loader && <SimpleLoader />}
+      <div
+        style={{ display: loader ? "none" : "flex" }}
+        className={styles.innerWrapper}
+      >
         <div className={styles.headingContainer}>
           <Heading text={"6DT"} />
         </div>
@@ -55,7 +73,11 @@ function SixDTTalks() {
 
         <div className={styles.speakersContainer}>
           {SixDTTalksData.map((item, index) => (
-            <SpeakerCard key={index + 1} props={item} />
+            <SpeakerCard
+              key={index + 1}
+              props={item}
+              onImageLoad={onImageLoad}
+            />
           ))}
         </div>
 

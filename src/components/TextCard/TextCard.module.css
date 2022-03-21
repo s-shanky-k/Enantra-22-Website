@@ -1,86 +1,86 @@
 .cardContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	overflow: hidden;
-	margin: 1rem;
-	width: 80%;
-	height: fit-content;
-	transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 1rem;
+  width: 80%;
+  height: fit-content;
+  transition: all 0.2s ease-in-out;
 }
 
 .textContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: fit-content;
-	background: var(--bgGradient);
-	border: solid var(--primary);
-	border-width: 0.3rem;
-	border-radius: 2rem 0.5rem;
-	text-align: center;
-	padding: 0.6rem 0.1rem;
-	width: 100%;
-	transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  background: var(--bgGradient);
+  border: solid var(--primary);
+  border-width: 0.3rem;
+  border-radius: 2rem 0.5rem;
+  text-align: center;
+  padding: 0.6rem 0.1rem;
+  width: 100%;
+  transition: 0.4s ease;
 }
 
 .title {
-	font-size: x-large;
-	font-weight: bold;
-	color: var(--text);
-	font-family: var(--primaryFont);
-	width: 90%;
-	letter-spacing: 0.1rem;
-	word-wrap: break-word;
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--text);
+  font-family: var(--primaryFont);
+  width: 90%;
+  letter-spacing: 0.1rem;
+  word-wrap: break-word;
 }
 
 .description {
-	font-size: medium;
-	color: var(--text);
-	width: 90%;
-	text-align: justify;
-	margin-top: 1rem;
+  font-size: medium;
+  color: var(--text);
+  width: 90%;
+  text-align: justify;
+  margin-top: 1rem;
 }
 
 .contact {
-	margin-top: 1rem;
-	color: var(--text);
+  margin-top: 1rem;
+  color: var(--text);
 }
 
 .contact p {
-	margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-2);
 }
 
 .contact p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .contactIcon {
-	margin: 0 0.5rem;
-	color: var(--primary);
+  margin: 0 0.5rem;
+  color: var(--primary);
 }
 
 @media (hover: hover) {
-	.cardContainer:hover {
-		transform: scale(1.03);
-	}
+  .cardContainer:hover {
+    transform: scale(1.03);
+  }
 }
 
 /* Mobile only */
 @media only screen and (max-width: 767px) {
-	.cardContainer {
-		max-width: 90%;
-		height: fit-content;
-	}
-	.description {
-		width: 80%;
-	}
+  .cardContainer {
+    max-width: 90%;
+    height: fit-content;
+  }
+  .description {
+    width: 95%;
+  }
 }
 
 /* Tablet only */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-	.cardContainer {
-		max-width: 80%;
-		height: fit-content;
-	}
+  .cardContainer {
+    max-width: 80%;
+    height: fit-content;
+  }
 }
