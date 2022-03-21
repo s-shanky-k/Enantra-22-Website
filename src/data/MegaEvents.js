@@ -30,7 +30,8 @@ export const MEGA_EVENTS = [
 		title: "Auction House",
 		url: "auction-house",
 		img: imageBasePath + "auction-house/logo.png",
-		oneLiner: "For the auction maniacs",
+		oneLiner:
+			"For the auction maniacs. Put your bidding skills to the test",
 		description:
 			"Are you a fellow auction maniac??? Do you also want to put your bidding skills to the test? Well, the chance to participate in this incredible event is up for bidding. Going once, going twice…",
 		time: "TBD",

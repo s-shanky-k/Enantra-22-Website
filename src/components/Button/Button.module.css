@@ -101,7 +101,7 @@
 
 .b05_3d_roll div:nth-child(1) {
 	color: #000000;
-	background-color: #be050e;
+	background-color: #0458db;
 	transform: rotateX(90deg);
 	-webkit-transform: rotateX(90deg);
 	-moz-transform: rotateX(90deg);
