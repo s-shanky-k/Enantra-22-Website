@@ -3,7 +3,7 @@ import styles from "./SixDTTalks.module.css";
 import SpeakerCard from "../../components/SpeakerCard/SpeakerCard";
 import Button from "../../components/Button/Button";
 import Heading from "../../components/Heading/Heading";
-import { SixDTTalksData } from "../../data/SixDTTalks";
+import { CONTACTS, SixDTTalksData } from "../../data/SixDTTalks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
@@ -59,14 +59,27 @@ function SixDTTalks() {
           ))}
         </div>
 
-        <div className={styles.buttonContainer}>
+        <div className={styles.contactContainer}>
+          <p>
+            For tickets, contact&nbsp;
+            {CONTACTS.map((contact, index) => {
+              if (index === CONTACTS.length - 1) {
+                return <span>&nbsp;{contact}.</span>;
+              } else {
+                return <span>&nbsp;{contact},</span>;
+              }
+            })}
+          </p>
+        </div>
+
+        {/* <div className={styles.buttonContainer}>
           <Button
             props={{
               text: "Register",
               onClickMethod: () => window.open(REGISTRATION_LINK),
             }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -85,6 +85,12 @@
   margin: 3rem 2rem;
 }
 
+.contactContainer {
+  width: 90%;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 /* Media Queries */
 
 /* Above Tablet */

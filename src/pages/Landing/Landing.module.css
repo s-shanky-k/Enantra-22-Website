@@ -79,6 +79,14 @@
   order: 2;
 }
 
+/* Sponsors */
+.sponsorWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: var(--mb-3) 0;
+}
+
 /* Media Queries */
 
 /* Above Tablet */
