@@ -23,6 +23,7 @@ import MegaEventsMiddleware from "./pages/MegaEvents/MegaEventsMiddleware";
 import ThemeToggler from "./components/ThemeToggler/ThemeToggler";
 import { createContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
+import SimpleLoader from "./components/SimpleLoader/SimpleLoader";
 
 export const ThemeTogglerFunc = createContext();
 export const Theme = createContext();
@@ -103,6 +104,8 @@ const AllRoutes = ({ theme }) => {
 
         <Route path="/mega-events" element={<MegaEvents />} />
         <Route path="/mega-events/:title" element={<MegaEventsMiddleware />} />
+
+        <Route path="/loader" element={<SimpleLoader />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
