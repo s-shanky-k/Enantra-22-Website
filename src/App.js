@@ -27,11 +27,14 @@ import SimpleLoader from "./components/SimpleLoader/SimpleLoader";
 
 export const ThemeTogglerFunc = createContext();
 export const Theme = createContext();
+export const Loader = createContext();
+export const SetLoader = createContext();
 
 const StyledApp = styled.div``;
 
 function App() {
   const [theme, settheme] = useState();
+  const [loader, setloader] = useState(false);
 
   useEffect(() => {
     if (Cookies.get("theme") === undefined) {
