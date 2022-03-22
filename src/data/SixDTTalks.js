@@ -36,6 +36,11 @@ export const SixDTTalksData = [
     title: "Tharun Kumar",
     description: "Fitness Blogger",
   },
+  {
+    img: imageBasePath + "AbishekAndNirmal.jpg",
+    title: "Abishek Kumar and Nirmal Pillai",
+    description: "Content Creators",
+  },
   // {
   // 	img: imageBasePath + "Santhosh.jpeg",
   // 	title: "Shyam",

@@ -37,7 +37,7 @@ export const MEGA_EVENTS = [
       "Are you a fellow auction maniac??? Do you also want to put your bidding skills to the test? Well, the chance to participate in this incredible event is up for bidding. Going once, going twice…",
     time: "",
     date: "1/4/2022",
-    venue: "Raman Auditorium",
+    venue: "Raman Auditorium - AC Tech",
     regFee: "Rs. 200",
     contact: [
       {
@@ -58,7 +58,7 @@ export const MEGA_EVENTS = [
       "This event is organized by the Start-up Committee. Our mission and vision is to help students with entrepreneurial minds, promote their ideas and take it up as a career during their time in college. We work in collaboration with various organizations and help students to channelize their visions. We work alongside Center for Entrepreneurship Development (CED), which is the largest entrepreneurial development organisation of Anna University, with who’s partnership and support, we the Start-up Committee can help you pursue your dream.",
     time: "4pm-6pm",
     date: "31/3/2022",
-    venue: "Civil Engineering Department ",
+    venue: "Raman Auditorium - AC Tech",
     contact: [
       {
         // name: "Name needed",

@@ -16,7 +16,7 @@ export const WORKSHOPS = [
     ],
     time: "10:00 AM",
     date: "March 31, 2022 and April 1, 2022",
-    venue: "HM Hall",
+    venue: "Henry Maudslay Hall - Mechanical Department",
     oneLiner:
       "Learn how to become an entrepreneur in Automotive service. Explore the future of autonomous, electric, hybrid and hydrogen cell cars and its practical applications with hands on training session.",
     description:
@@ -46,7 +46,7 @@ export const WORKSHOPS = [
     ],
     time: "9:00 AM",
     date: "March 31, 2022",
-    venue: "RUSA Galley",
+    venue: "Maxwell Auditorium - ECE Department",
     oneLiner:
       "Learn more about the real process behind making of a film, use of sounds in films and about cinematography. ",
     description:
@@ -75,7 +75,7 @@ export const WORKSHOPS = [
     ],
     time: "10:00-12:00 & 1:00-4:00",
     date: "March 31, 2022 and April 1, 2022",
-    venue: "Ocean Management Department",
+    venue: "Hall of 1960 - Chemistry Department",
     oneLiner:
       "Gain complete understanding and confidence when investing in the Stock Market. Learn about investing strategies.",
     description:
@@ -104,7 +104,7 @@ export const WORKSHOPS = [
     ],
     time: "9:00 AM",
     date: "March 31, 2022",
-    venue: "ECE Department",
+    venue: "Platinum Jubilee Building - AC Tech",
     oneLiner:
       "Learn about the metaverse from scratch through group discussions.",
     description:
@@ -133,7 +133,7 @@ export const WORKSHOPS = [
     ],
     time: "10:00 AM",
     date: "April 1, 2022",
-    venue: "ECE Department",
+    venue: "Platinum Jubilee Building - AC Tech",
     oneLiner:
       "Get an insight into what goes behind during wedding planning, corporate functions etc.",
     description:
@@ -162,7 +162,7 @@ export const WORKSHOPS = [
     ],
     time: "9:00 AM",
     date: "April 1, 2022",
-    venue: "ECE Department",
+    venue: "Platinum Jubilee Building - AC Tech",
     oneLiner:
       "Learn the basics of graphic designing through general group discussions",
     description:
