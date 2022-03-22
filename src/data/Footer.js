@@ -10,7 +10,7 @@ export const SOCIAL_MEDIAS = [
 	},
 	{
 		icon: <LinkedInIcon className={`${styles.socialIcon}`} />,
-		url: "https://www.linkedin.com/mwlite/company/capitalize-students-entrepreneurship-club",
+		url: "https://www.linkedin.com/company/capitalize-students-entrepreneurship-club/mycompany/",
 	},
 	{
 		icon: <FacebookIcon className={`${styles.socialIcon}`} />,
