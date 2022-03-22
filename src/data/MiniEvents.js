@@ -3,6 +3,7 @@ const imageBasePath = `${process.env.PUBLIC_URL}/assets/images/MiniEvents/`;
 export const MINI_EVENTS = [
   // Arena Hunt
   {
+    isReg: true,
     title: "Arena Hunt",
     url: "arena-hunt",
     img: imageBasePath + "arena-hunt/logo.png",
@@ -23,6 +24,7 @@ export const MINI_EVENTS = [
 
   // Save the Company!
   {
+    isReg: true,
     title: "Save the Company!",
     url: "save-the-company",
     img: imageBasePath + "save-the-company/logo.png",
@@ -44,6 +46,7 @@ export const MINI_EVENTS = [
 
   // Brand Race
   {
+    isReg: true,
     title: "Brand Race",
     url: "brand-race",
     img: imageBasePath + "brand-race/logo.png",
@@ -65,6 +68,7 @@ export const MINI_EVENTS = [
 
   // Shark Tank
   {
+    isReg: true,
     title: "Shark Tank",
     url: "shark-tank",
     img: imageBasePath + "shark-tank/logo.png",
@@ -86,6 +90,7 @@ export const MINI_EVENTS = [
 
   // Enviropreneur
   {
+    isReg: true,
     title: "Enviropreneur",
     url: "enviropreneur",
     img: imageBasePath + "enviropreneur/logo.png",
@@ -107,6 +112,7 @@ export const MINI_EVENTS = [
 
   // Entrevert
   {
+    isReg: true,
     title: "Entrevert",
     url: "entrevert",
     img: imageBasePath + "entrevert/logo.png",
@@ -127,6 +133,7 @@ export const MINI_EVENTS = [
 
   // Poster Mania
   {
+    isReg: false,
     title: "Poster Mania",
     url: "poster-mania",
     img: imageBasePath + "poster-mania/logo.png",
@@ -147,6 +154,7 @@ export const MINI_EVENTS = [
 
   // Creative Photography
   {
+    isReg: false,
     title: "Creative Photography",
     url: "creative-photography",
     img: imageBasePath + "creative-photography/logo.png",

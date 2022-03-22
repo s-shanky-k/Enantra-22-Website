@@ -81,9 +81,18 @@ function SixDTTalks() {
           ))}
         </div>
 
+        <div className={styles.buttonContainer}>
+          <Button
+            props={{
+              text: "Register",
+              onClickMethod: () => window.open(REGISTRATION_LINK),
+            }}
+          />
+        </div>
+
         <div className={styles.contactContainer}>
           <p>
-            For tickets, contact&nbsp;
+            For buying tickets in-person, contact&nbsp;
             {CONTACTS.map((contact, index) => {
               if (index === CONTACTS.length - 1) {
                 return <span>&nbsp;{contact}.</span>;
@@ -93,15 +102,6 @@ function SixDTTalks() {
             })}
           </p>
         </div>
-
-        {/* <div className={styles.buttonContainer}>
-          <Button
-            props={{
-              text: "Register",
-              onClickMethod: () => window.open(REGISTRATION_LINK),
-            }}
-          />
-        </div> */}
       </div>
     </div>
   );

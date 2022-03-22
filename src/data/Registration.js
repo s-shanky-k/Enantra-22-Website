@@ -1,1 +1,2 @@
-export const REGISTRATION_LINK = "https://forms.gle/3ZTgh9FFRo7n5M3h7";
+export const REGISTRATION_LINK =
+  "https://www.meraevents.com/event/enantra-2022-workshops";

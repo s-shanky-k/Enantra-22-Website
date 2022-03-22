@@ -92,14 +92,16 @@ function WorkshopTemplate({ props }) {
               contact: props.contact,
             }}
           />
-          <div className={styles.buttonContainer}>
-            <Button
-              props={{
-                text: "Register",
-                onClickMethod: () => window.open(REGISTRATION_LINK),
-              }}
-            />
-          </div>
+          {props.isReg && (
+            <div className={styles.buttonContainer}>
+              <Button
+                props={{
+                  text: "Register",
+                  onClickMethod: () => window.open(REGISTRATION_LINK),
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
       {props.hasOwnProperty("speakers") && (
