@@ -15,30 +15,34 @@ import { REGISTRATION_LINK } from "../../data/Registration";
 import SimpleLoader from "../../components/SimpleLoader/SimpleLoader";
 
 function SixDTTalks() {
-  let imageCounter = useRef(0);
-  const [loader, setloader] = useState(true);
+	let imageCounter = useRef(0);
+	const [loader, setloader] = useState(true);
 
-  const onImageLoad = () => {
-    imageCounter.current += 1;
+	const onImageLoad = () => {
+		imageCounter.current += 1;
 
-    // If all images are loaded, set loader to false
-    if (imageCounter.current >= SixDTTalksData.length) {
-      setloader(false);
-      imageCounter.current = 0;
-    }
-  };
+		// If all images are loaded, set loader to false
+		if (imageCounter.current >= SixDTTalksData.length) {
+			setloader(false);
+			imageCounter.current = 0;
+		}
+	};
 
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.bgDiv}></div>
-      {loader && <SimpleLoader />}
-      <div
-        style={{ display: loader ? "none" : "flex" }}
-        className={styles.innerWrapper}
-      >
-        <div className={styles.headingContainer}>
-          <Heading text={"6DT"} />
-        </div>
+	return (
+		<div className={styles.wrapper}>
+			<div className={styles.bgDiv}></div>
+			{loader && <SimpleLoader />}
+			<div
+				style={{ display: loader ? "none" : "flex" }}
+				className={styles.innerWrapper}
+			>
+				<div className={styles.headingContainer}>
+					<img
+						src={`${process.env.PUBLIC_URL}/assets/images/SixDTTalks/icon.png`}
+						className={styles.headingIcon}
+					/>
+					<Heading text={"6DT"} />
+				</div>
 
 				<div className={styles.contentContainer}>
 					<p className={styles.description}>
@@ -81,40 +85,40 @@ function SixDTTalks() {
 					</p>
 				</div>
 
-        <div className={styles.speakersContainer}>
-          {SixDTTalksData.map((item, index) => (
-            <SpeakerCard
-              key={index + 1}
-              props={item}
-              onImageLoad={onImageLoad}
-            />
-          ))}
-        </div>
+				<div className={styles.speakersContainer}>
+					{SixDTTalksData.map((item, index) => (
+						<SpeakerCard
+							key={index + 1}
+							props={item}
+							onImageLoad={onImageLoad}
+						/>
+					))}
+				</div>
 
-        <div className={styles.buttonContainer}>
-          <Button
-            props={{
-              text: "Register",
-              onClickMethod: () => window.open(REGISTRATION_LINK),
-            }}
-          />
-        </div>
+				<div className={styles.buttonContainer}>
+					<Button
+						props={{
+							text: "Register",
+							onClickMethod: () => window.open(REGISTRATION_LINK),
+						}}
+					/>
+				</div>
 
-        <div className={styles.contactContainer}>
-          <p>
-            For buying tickets in-person, contact&nbsp;
-            {CONTACTS.map((contact, index) => {
-              if (index === CONTACTS.length - 1) {
-                return <span>&nbsp;{contact}.</span>;
-              } else {
-                return <span>&nbsp;{contact},</span>;
-              }
-            })}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+				<div className={styles.contactContainer}>
+					<p>
+						For buying tickets in-person, contact&nbsp;
+						{CONTACTS.map((contact, index) => {
+							if (index === CONTACTS.length - 1) {
+								return <span>&nbsp;{contact}.</span>;
+							} else {
+								return <span>&nbsp;{contact},</span>;
+							}
+						})}
+					</p>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default SixDTTalks;
